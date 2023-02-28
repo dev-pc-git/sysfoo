@@ -16,16 +16,12 @@ pipeline{
       }
    } 
 
-   stages{
-
      stage('test'){
      steps{
       sh 'mvn clean test'
 
       }
    }
- stages{
-
      stage('package'){
      steps{
       sh 'package -DskipTests'
