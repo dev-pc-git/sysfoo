@@ -4,13 +4,6 @@ pipeline {
     stage('build') {
       steps {
         sh 'mvn compile'
-    }
-
-  }
-  stages {
-    stage('build') {
-      steps {
-        sh 'mvn compile'
       }
     }
 
