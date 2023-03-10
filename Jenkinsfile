@@ -1,7 +1,9 @@
 pipeline {
-  agent {
-    docker {
-      image 'schoolofdevops/maven'
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        sh 'mvn compile'
     }
 
   }
